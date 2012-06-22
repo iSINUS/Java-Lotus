@@ -20,7 +20,7 @@ public class TestConnection
       Database db = session.getDatabase(server, args[3]);
       System.out.println("Database: "+db.getTitle());
 
-      View view = db.getView("All Documents");
+      View view = db.getView(args[4]);
       Document doc = view.getFirstDocument();
       System.out.println("Document: "+doc.getHttpURL());
       
